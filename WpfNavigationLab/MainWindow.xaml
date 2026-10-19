@@ -1,0 +1,73 @@
+﻿<Window x:Class="WpfNavigationLab.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="WPF Navigation Lab"
+        Height="600"
+        Width="900"
+        WindowStartupLocation="CenterScreen"
+        Background="#F1F5F9">
+
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="220"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+
+        <Border Grid.Column="0"
+                Background="#1E293B">
+
+            <ScrollViewer VerticalScrollBarVisibility="Auto">
+                <StackPanel Margin="20">
+                    <TextBlock Text="WPF LAB"
+                               Foreground="White"
+                               FontSize="24"
+                               FontWeight="Bold"
+                               Margin="0,10,0,30"/>
+
+                    <Button Content="Főoldal"
+                            Height="45"
+                            Margin="0,0,0,10"
+                            Click="Home_Click"/>
+
+                    <Button Content="Profil"
+                            Height="45"
+                            Margin="0,0,0,10"
+                            Click="Profile_Click"/>
+
+                    <Button Content="Beállítások"
+                            Height="45"
+                            Margin="0,0,0,25"
+                            Click="Settings_Click"/>
+
+                    <TextBlock Text="Külön Window"
+                               Foreground="#94A3B8"
+                               FontWeight="Bold"
+                               Margin="0,0,0,10"/>
+
+                    <Button Content="Új ablak - Show()"
+                            Height="45"
+                            Margin="0,0,0,10"
+                            Click="OpenWindow_Click"/>
+
+                    <Button Content="Modális - ShowDialog()"
+                            Height="45"
+                            Margin="0,0,0,10"
+                            Click="OpenDialog_Click"/>
+
+                    <Button Content="Súgó"
+                            Height="45"
+                            Margin="0,0,0,10"
+                            Click="Help_Click"/>
+
+                    <Button Content="Névjegy"
+                            Height="45"
+                            Click="About_Click"/>
+                </StackPanel>
+            </ScrollViewer>
+        </Border>
+
+        <Frame x:Name="mainFrame"
+               Grid.Column="1"
+               NavigationUIVisibility="Hidden"/>
+    </Grid>
+</Window>

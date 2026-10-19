@@ -1,0 +1,41 @@
+<Window x:Class="WpfNavigationLab.AboutWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Névjegy"
+        Height="300"
+        Width="420"
+        WindowStartupLocation="CenterOwner"
+        ResizeMode="NoResize"
+        Background="#F8FAFC">
+
+    <Grid Margin="25">
+        <StackPanel>
+            <TextBlock Text="WPF Navigation Lab"
+                       FontSize="24"
+                       FontWeight="Bold"
+                       Foreground="#1E293B"
+                       HorizontalAlignment="Center"
+                       Margin="0,10,0,15"/>
+
+            <TextBlock Text="Verzió: 1.0.0"
+                       FontSize="16"
+                       HorizontalAlignment="Center"
+                       Margin="0,5"/>
+
+            <TextBlock Text="Készítette: Pongor Márk"
+                       FontSize="16"
+                       HorizontalAlignment="Center"
+                       Margin="0,5"/>
+
+            <TextBlock Text="Tanulási projekt C# és WPF használatával."
+                       TextWrapping="Wrap"
+                       TextAlignment="Center"
+                       Foreground="#64748B"
+                       Margin="0,10,0,20"/>
+
+            <Button Content="Bezárás"
+                    Height="40"
+                    Click="Close_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

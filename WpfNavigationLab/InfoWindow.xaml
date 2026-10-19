@@ -1,0 +1,47 @@
+<Window x:Class="WpfNavigationLab.InfoWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Külön ablak"
+        Height="400"
+        Width="450"
+        WindowStartupLocation="CenterOwner"
+        Background="#F8FAFC">
+
+    <Grid Margin="30">
+        <StackPanel>
+            <TextBlock Text="Külön Window"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       Foreground="#1E293B"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Ez egy önálló WPF ablak."
+                       Margin="0,10,0,25"
+                       Foreground="#64748B"
+                       HorizontalAlignment="Center"/>
+
+            <TextBlock Text="Írd be a neved:"
+                       FontWeight="Bold"/>
+
+            <TextBox x:Name="txtName"
+                     Height="40"
+                     FontSize="16"
+                     Padding="8"
+                     Margin="0,5,0,15"/>
+
+            <Button Content="Köszönés"
+                    Height="40"
+                    Margin="0,0,0,10"
+                    Click="Hello_Click"/>
+
+            <Button Content="Ablakcím beállítása"
+                    Height="40"
+                    Margin="0,0,0,10"
+                    Click="ChangeTitle_Click"/>
+
+            <Button Content="Ablak bezárása"
+                    Height="40"
+                    Click="Close_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>

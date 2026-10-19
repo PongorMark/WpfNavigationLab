@@ -1,0 +1,56 @@
+<Window x:Class="WpfNavigationLab.HelpWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Súgó"
+        Height="350"
+        Width="500"
+        WindowStartupLocation="CenterOwner"
+        Background="#F8FAFC">
+
+    <Grid Margin="30">
+        <StackPanel>
+            <TextBlock Text="WPF Navigation Lab"
+                       FontSize="26"
+                       FontWeight="Bold"
+                       Foreground="#1E293B"
+                       Margin="0,0,0,10"/>
+
+            <TextBlock Text="Súgó és használati útmutató"
+                       FontSize="16"
+                       Foreground="#64748B"
+                       Margin="0,0,0,25"/>
+
+            <Border Background="White"
+                    CornerRadius="12"
+                    Padding="20"
+                    Margin="0,0,0,20">
+
+                <StackPanel>
+                    <TextBlock Text="Az alkalmazás használata"
+                               FontSize="18"
+                               FontWeight="Bold"
+                               Margin="0,0,0,10"/>
+
+                    <TextBlock Text="Főoldal: az alkalmazás kezdőoldala."
+                               TextWrapping="Wrap"
+                               Margin="0,0,0,8"/>
+
+                    <TextBlock Text="Profil: név és e-mail cím megadása."
+                               TextWrapping="Wrap"
+                               Margin="0,0,0,8"/>
+
+                    <TextBlock Text="Beállítások: értesítések engedélyezése."
+                               TextWrapping="Wrap"
+                               Margin="0,0,0,8"/>
+
+                    <TextBlock Text="A külön ablak gombok önálló ablakokat nyitnak."
+                               TextWrapping="Wrap"/>
+                </StackPanel>
+            </Border>
+
+            <Button Content="Bezárás"
+                    Height="45"
+                    Click="Close_Click"/>
+        </StackPanel>
+    </Grid>
+</Window>
